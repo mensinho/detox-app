@@ -1,0 +1,34 @@
+{
+  "name": "detoxapp",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "start": "react-native start",
+    "test": "jest",
+    "lint": "eslint .",
+    "build:ios:debug": "detox build --configuration ios.sim.debug",
+    "test:ios:debug": "detox test --configuration ios.sim.debug"
+  },
+  "dependencies": {
+    "react": "18.0.0",
+    "react-native": "0.69.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.9",
+    "@babel/runtime": "^7.12.5",
+    "@react-native-community/eslint-config": "^2.0.0",
+    "babel-jest": "^28.1.1",
+    "detox": "^19.7.1",
+    "eslint": "^7.32.0",
+    "jest": "^28.1.1",
+    "jest-circus": "^28.0.3",
+    "metro-react-native-babel-preset": "^0.70.3",
+    "react-test-renderer": "18.0.0",
+    "regenerator-runtime": "^0.13.9"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
